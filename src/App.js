@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 import './App.css';
 import Navbar from './components/navbar';
 import Counters from './components/counters';
-import Lists from './components/Lists'
+import Lists from './components/Lists';
+
 
 class App extends Component {
   constructor(){
@@ -27,9 +28,11 @@ class App extends Component {
   render() { 
     return (
       <div className="mx-auto">
-        <Navbar value={this.state.value}/>
-        <Counters value1={this.state.value} handleInc={this.handleInc} handleDec={this.handleDec}/>
-        <Lists/>
+        
+          <Navbar value={this.state.value}/>
+          <Counters value1={this.state.value} handleInc={this.handleInc} handleDec={this.handleDec}/>
+          <Lists/>
+         
       </div>
      );
   }

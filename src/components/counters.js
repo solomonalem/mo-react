@@ -4,7 +4,11 @@ import Counter from './counter'
 class Counters extends Component {
     
     render() { 
-        return ( <Counter value2={this.props.value1} handleInc={this.props.handleInc} handleDec={this.props.handleDec}/> );
+        return (
+             <div style={{backgroundColor:"#F0F5F9"}}>
+                <Counter value2={this.props.value1} handleInc={this.props.handleInc} handleDec={this.props.handleDec}/>
+            </div> 
+            );
     }
 }
  
