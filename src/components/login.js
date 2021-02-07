@@ -11,7 +11,7 @@ export default class Login extends Component {
         return (
 
             <di><div className="formcontainer  bg-light my-5">
-            <form className="  m-5 py-5" onSubmit={(event)=>this.handleFormSubmit(event)}>
+            <form className="  m-5 py-5" onSubmit={this.handleFormSubmit}>
             <div className="form-group py-3">
             <label for="exampleInputEmail1">Email address</label>
             <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
