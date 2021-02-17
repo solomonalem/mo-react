@@ -4,6 +4,8 @@ import './App.css';
 import Navbar from './components/navbar';
 import Counters from './components/counters';
 import Lists from './components/Lists';
+import Movies from './hoc/Movies';
+import Clock from './components/Clock';
 
 
 class App extends Component {
@@ -31,6 +33,8 @@ class App extends Component {
         
           <Navbar value={this.state.value}/>
           <Counters value1={this.state.value} handleInc={this.handleInc} handleDec={this.handleDec}/>
+          <Movies/>
+          <Clock/>
           <Lists/>
          
       </div>
